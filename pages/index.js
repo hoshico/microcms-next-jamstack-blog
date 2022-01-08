@@ -1,10 +1,13 @@
+import { Heading } from "@chakra-ui/react";
 import Link from "next/link";
 import { client } from "../libs/client";
+
 
 
 export default function Home({ blog }) {
   return (
     <div>
+      <Heading color="gray.400">encode2</Heading>
       <ul>
         {blog.map((blog) => (
           <li key={blog.id}>
