@@ -4,7 +4,9 @@ import { client } from "../libs/client";
 
 
 
-export default function Home({ blog }) {
+export default function Home(props) {
+  const { blog } = props;
+  console.log(blog);
   return (
     <div>
       <Heading color="gray.400">encode2</Heading>
