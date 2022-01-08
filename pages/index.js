@@ -1,6 +1,7 @@
 import { Heading } from "@chakra-ui/react";
 import Link from "next/link";
 import { client } from "../libs/client";
+import { HeaderLayout } from "../src/components/templates/HeaderLayout";
 
 
 
@@ -9,7 +10,7 @@ export default function Home(props) {
   console.log(blog);
   return (
     <div>
-      <Heading color="gray.400">encode2</Heading>
+      <HeaderLayout></HeaderLayout>
       <ul>
         {blog.map((blog) => (
           <li key={blog.id}>
