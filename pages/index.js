@@ -1,7 +1,7 @@
 import { Heading } from "@chakra-ui/react";
 import Link from "next/link";
 import { client } from "../libs/client";
-import { HeaderLayout } from "../src/components/templates/HeaderLayout";
+import { HeaderLayout } from "../components/templates/HeaderLayout";
 
 
 
@@ -27,7 +27,6 @@ export default function Home(props) {
 // データをテンプレートに受け渡す部分の処理を記述します
 export const getStaticProps = async () => {
   const data = await client.get({ endpoint: "blog" });
-
   return {
     props: {
       blog: data.contents,

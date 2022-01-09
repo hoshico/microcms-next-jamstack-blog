@@ -1,7 +1,8 @@
-import { Flex, Heading } from '@chakra-ui/react'
+/* eslint-disable */
 import { memo } from 'react'
+import { Flex, Heading } from '@chakra-ui/react'
 
-export const Header = () => {
+export const Header = memo(() => {
   return (
     <Flex
       as="nav"
@@ -16,4 +17,4 @@ export const Header = () => {
       </Heading>
     </Flex>
   )
-}
+});
