@@ -1,3 +1,4 @@
+import { Wrap } from "@chakra-ui/react";
 import { client } from "../../libs/client";
 
 export default function BlogId({ blog }) {
