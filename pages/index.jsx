@@ -15,9 +15,9 @@ export default function Home(props) {
     <Wrap p={{ base: 4, md: 10}}>
       {blog.map((blog) => (
         <WrapItem key={blog.id} mx="auto">
-          <Link href={`/blog/${blog.id}`}>
+          {/*<Link href={`/blog/${blog.id}`}>
               <a>{blog.title}</a>
-          </Link>
+          </Link>*/}
           <ArticleCard blogId={blog.id} blogTitle={blog.title}></ArticleCard>
         </WrapItem>
       ))}
