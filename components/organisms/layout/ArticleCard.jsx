@@ -3,6 +3,7 @@ import { Box, Image, Stack, Text } from '@chakra-ui/react'
 import Link from 'next/link'
 import { memo } from 'react'
 
+
 export const ArticleCard = memo((props) => {
   const { blogId, blogTitle, blogCategory } = props
   return (
@@ -17,7 +18,7 @@ export const ArticleCard = memo((props) => {
         _hover={{ cursor: 'pointer', opacity: 0.8 }}
       > 
         <Stack textAlign="center">
-          {blogCategory ? (<Image w="300px" src={`${blogCategory.name}.png`} />) : (<Image w="300px" src="/etc.png" />)}
+          {blogCategory ? (<Image w="300px" src={`/${blogCategory.name}.png`} />) : (<Image w="300px" src="/etc.png" />)}
         </Stack>
         <Stack textAlign="center">
           <Text fontSize="lg" fontWeight="bold" mt={2} bg="gray.300">

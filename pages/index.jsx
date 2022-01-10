@@ -7,7 +7,7 @@ import { ArticleCard } from "../components/organisms/layout/ArticleCard";
 
 export default function Home(props) {
   const { blog } = props;
-  //console.log(blog);
+  console.log(blog);
   return (
     <>
     <HeaderLayout></HeaderLayout>
@@ -18,6 +18,7 @@ export default function Home(props) {
         </WrapItem>
       ))}
     </Wrap>
+    
     </>
     
   );
