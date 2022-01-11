@@ -10,7 +10,7 @@ export const Header = memo(() => {
       color="blackAlpha.300"
       align="center"
       justify="space-between"
-      padding={{ base: 3, md: 5 }}
+      padding={{ base: 4, md: 5 }}
     >
       <Heading as="h1" fontSize="3xl">
         encode2
