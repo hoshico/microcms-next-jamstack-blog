@@ -9,12 +9,12 @@ export const ArticleCard = memo((props) => {
   return (
     <Link href={`/blog/${blogId}`}>
       <Box
-        w="300px"
+        w="280px"
         h="450px"
         bg="white"
         shadow="md"
-        p={8}
-        mr={5}
+        p={5}
+        mr={2}
         _hover={{ cursor: 'pointer', opacity: 0.8 }}
       >
         <Stack textAlign="center">
