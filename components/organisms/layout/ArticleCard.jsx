@@ -1,7 +1,7 @@
 /* eslint-disable */
 import Link from 'next/link'
-import Image from 'next/image'
-import { Box, Stack, Text } from '@chakra-ui/react'
+//import Image from 'next/image'
+import { Box, Image, Stack, Text } from '@chakra-ui/react'
 import { memo } from 'react'
 
 export const ArticleCard = memo((props) => {
@@ -17,10 +17,10 @@ export const ArticleCard = memo((props) => {
         mr={5}
         _hover={{ cursor: 'pointer', opacity: 0.8 }}
       >
-        {/*<Stack textAlign="center">
+        <Stack textAlign="center">
           {blogCategory ? (<Image w="300px" src={`/${blogCategory.name}.png`} />) : (<Image w="300px" src="/etc.png" />)}
-        </Stack>*/}
-        {blogCategory ? (<Image src={`/${blogCategory.name}.png`} width={300} height={300} />) : null}
+        </Stack>
+        {/*{blogCategory ? (<Image src={`/${blogCategory.name}.png`} width={300} height={300} />) : (<Image w="300px" src="/etc.png" width={300} height={300}/>)}*/}
         <Stack textAlign="center">
           <Text fontSize="lg" fontWeight="bold" mt={2} bg="gray.300">
             {blogTitle}
