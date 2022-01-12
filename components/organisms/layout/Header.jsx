@@ -17,7 +17,7 @@ export const Header = memo(() => {
         encode2
       </Heading>
       <Box mr={2}>
-        <Link href="" >
+        <Link href={`/profile`} >
           プロフィール
         </Link>
       </Box>

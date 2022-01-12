@@ -1,18 +1,21 @@
 import { Wrap } from "@chakra-ui/react";
+import { HeaderLayout } from "../../components/templates/HeaderLayout";
 import { client } from "../../libs/client";
 
 export default function BlogId({ blog }) {
   return (
-    <main>
-      <h1>{blog.title}</h1>
-      <p>{blog.publishedAt}</p>
-      <p className="category">{blog.category && `${blog.category.name}`}</p>
-      <div
-        dangerouslySetInnerHTML={{
-          __html: `${blog.body}`,
-        }}
-      />
-    </main>
+    <HeaderLayout>
+      <main>
+        <h1>{blog.title}</h1>
+        <p>{blog.publishedAt}</p>
+        <p className="category">{blog.category && `${blog.category.name}`}</p>
+        <div
+          dangerouslySetInnerHTML={{
+            __html: `${blog.body}`,
+          }}
+        />
+      </main>
+    </HeaderLayout>
   );
 }
 
