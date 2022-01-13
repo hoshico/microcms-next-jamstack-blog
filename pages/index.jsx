@@ -6,13 +6,12 @@ import { ArticleCard } from "../components/organisms/layout/ArticleCard";
 
 
 export default function Home(props) {
-  const { blog } = props;
-  console.log(blog);
+  const { blogs } = props;
   return (
     <>
     <HeaderLayout></HeaderLayout>
     <Wrap p={{ base: 8, md: 10}}>
-      {blog.map((blog) => (
+      {blogs.map((blog) => (
         <WrapItem key={blog.id} mx="auto">
           <ArticleCard blogCategory={blog.category} blogId={blog.id} blogTitle={blog.title} ></ArticleCard>
         </WrapItem>
@@ -29,7 +28,7 @@ export const getStaticProps = async () => {
   const data = await client.get({ endpoint: "blog" });
   return {
     props: {
-      blog: data.contents,
+      blogs: data.contents,
     },
   };
 };

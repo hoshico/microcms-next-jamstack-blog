@@ -14,7 +14,9 @@ export const Header = memo(() => {
       padding={{ base: 4, md: 5 }}
     >
       <Heading as="h1" fontSize="3xl">
-        encode2
+        <Link href={`/`}>
+          encode2
+        </Link>
       </Heading>
       <Box mr={2}>
         <Link href={`/profile`} >
