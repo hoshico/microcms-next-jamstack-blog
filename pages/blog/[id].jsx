@@ -5,26 +5,26 @@ import { client } from '../../libs/client'
 export default function BlogId({ blog }) {
   return (
     <HeaderLayout>
-      <Box w="80%" h="100%" p="50px 50px 100px" mx="auto" shadow="lg">
-        <Text fontSize="2xl" fontWeight="bold" mb={3} p="10px" bg="gray.300">
+      <Box w="80%" h="100%" p={{md: "50px 50px 100px", sm: "5px"}} mx="auto" shadow="lg">
+        <Text fontSize={{base:"xl", md:"2xl"}} fontWeight="bold" mb={3} p="10px" bg="gray.300">
           {blog.title}
         </Text>
         <Flex>
           <Stack textAlign="left">
-            <Text fontSize="md" fontWeight="semi-bold" mb={3} p="10px">
+            <Text fontSize={{base:"sm", md:"2xl"}} fontWeight="semi-bold" mb={3} p="10px">
               {blog.publishedAt}
             </Text>
           </Stack>
           <Spacer />
           <Stack textAlign="left">
-            <Text fontSize="md" fontWeight="bold" mb={3} p="10px">
+            <Text fontSize={{base:"sm", md:"2xl"}} fontWeight="bold" mb={3} p="10px">
               {blog.category && `カテゴリー: ${blog.category.name}`}
             </Text>
           </Stack>
         </Flex>
         
         <Stack textAlign="left">
-          <Text fontSize="xl" fontWeight="semi-bold" mb={3} p="10px">
+          <Text fontSize={{base:"sm", md:"2xl"}} fontWeight="semi-bold" mb={3} p="10px">
           <div
             dangerouslySetInnerHTML={{
               __html: `${blog.body}`,
