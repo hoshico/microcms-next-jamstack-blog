@@ -1,7 +1,11 @@
+import { HeaderLayout } from "../components/templates/HeaderLayout";
+
 export default function Custom404() {
   return (
-    <main className="main">
-      <p>ページがありません。</p>
-    </main>
+    <HeaderLayout>
+      <main className="main">
+        <p>ページがありません。</p>
+      </main>
+    </HeaderLayout>
   );
 }

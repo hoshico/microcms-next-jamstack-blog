@@ -9,7 +9,7 @@ export const ArticleCard = memo((props) => {
   return (
     <Link href={`/blog/${blogId}`}>
       <Box
-        w="280px"
+        w={{ base:"100%",sm:"280px" }}
         h="450px"
         bg="white"
         shadow="md"

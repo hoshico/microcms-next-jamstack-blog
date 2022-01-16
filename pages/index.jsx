@@ -7,6 +7,7 @@ import { ArticleCard } from "../components/organisms/layout/ArticleCard";
 
 export default function Home(props) {
   const { blogs } = props;
+  //console.log(blogs);
   return (
     <>
     <HeaderLayout></HeaderLayout>
