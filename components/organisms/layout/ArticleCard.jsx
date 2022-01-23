@@ -3,9 +3,13 @@ import Link from 'next/link'
 //import Image from 'next/image'
 import { Box, Image, Stack, Text } from '@chakra-ui/react'
 import { memo } from 'react'
+import { useGetCategoryImage } from '../../hooks/useGetCategoryImage'
 
 export const ArticleCard = memo((props) => {
   const { blogId, blogTitle, blogCategory } = props
+  if(blogCategory) {
+    useGetCategoryImage(blogCategory.name);
+  } 
   return (
     <Link href={`/blog/${blogId}`}>
       <Box
