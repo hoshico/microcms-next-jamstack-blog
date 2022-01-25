@@ -4,10 +4,7 @@ import React from 'react';
 // それをlowercaseに変換してimgをリターンする
 
 export const useGetCategoryImage = (props) => {
-  const { category } = props;
-  console.log(props)
-  //const { blogCategory } = props;
-  
+  const category = props.toLowerCase();
   return (
     //{blogCategory ? (<Image w="300px" src={`/${blogCategory.name}.png`} />) : (<Image w="300px" src="/etc.png" />)}
     console.log(category)
