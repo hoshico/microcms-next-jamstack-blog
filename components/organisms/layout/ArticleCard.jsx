@@ -9,7 +9,7 @@ export const ArticleCard = memo((props) => {
   const { blogId, blogTitle, blogCategory } = props
   if(blogCategory) {
     useGetCategoryImage(blogCategory.name);
-  } 
+  }
   return (
     <Link href={`/blog/${blogId}`}>
       <Box

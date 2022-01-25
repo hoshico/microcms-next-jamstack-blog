@@ -2,8 +2,7 @@ import { Box, Flex, Spacer, Stack, Text, Wrap, WrapItem } from '@chakra-ui/react
 import { HeaderLayout } from '../../components/templates/HeaderLayout'
 import { client } from '../../libs/client'
 
-export default function BlogId({ blog }) {
-  console.log(blog);
+export default function BlogId({ blog }) { 
   return (
     <HeaderLayout>
       <Box w="80%" h="100%" p={{md: "50px 50px 100px", sm: "5px"}} mx="auto" shadow="lg">
